@@ -1,0 +1,23 @@
+{
+  "name": "restapi_nodejs_sqlite3",
+  "version": "1.0.0",
+  "description": "REST API code using nodejs, express and sqlite3",
+  "main": "restwithnodejssqlite3.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://codesprintpro@github.com/codesprintpro/restapiusingnodejsandsqlite3.git"
+  },
+  "author": "Sachin Sarawgi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codesprintpro/restapiusingnodejsandsqlite3/issues"
+  },
+  "homepage": "https://github.com/codesprintpro/restapiusingnodejsandsqlite3#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "sqlite3": "^4.2.0"
+  }
+}
