@@ -53,7 +53,7 @@ app.get("/employees", (req, res, next) => {
 });
 
 app.post("/employees/", (req, res, next) => {
-    var reqBody = re.body;
+    var reqBody = req.body;
     db.run("INSERT INTO employees (last_name, first_name, title, address, country_code) VALUES (?,?,?,?,?)",
         [reqBody.last_name, reqBody.first_name, reqBody.title, reqBody.address, reqBody.country_code],
         function (err, result) {
@@ -68,7 +68,7 @@ app.post("/employees/", (req, res, next) => {
 });
 
 app.patch("/employees/", (req, res, next) => {
-    var reqBody = re.body;
+    var reqBody = req.body;
     db.run(`UPDATE employees set last_name = ?, first_name = ?, title = ?, address = ?, country_code = ? WHERE employee_id = ?`,
         [reqBody.last_name, reqBody.first_name, reqBody.title, reqBody.address, reqBody.country_code, reqBody.employee_id],
         function (err, result) {
